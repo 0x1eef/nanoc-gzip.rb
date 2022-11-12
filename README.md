@@ -2,11 +2,12 @@
 
 nanoc-gunzip.rb is a [nanoc](https://github.com/nanoc/nanoc) filter that can
 compress textual, and binary items in a nanoc-powered website. The filter is
-particularly useful when paired with the [gzip_static]() feature of nginx, or
-its equivalent in other web servers.
+particularly useful when paired with the
+[gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
+feature of nginx, or its equivalent in other web servers.
 
 The advantage of performing compression at compile time is that compression does
-not have to happen at runtime when a web server serving a request - which can save
+not have to happen at runtime when a web server serves a request - which can save
 time and CPU resources.
 
 ## Examples
