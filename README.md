@@ -72,7 +72,7 @@ end
 ## Sources
 
 * [Source code (GitHub)](https://github.com/0x1eef/nanoc-gunzip.rb)
-* [Source code (GitLab)](https://github.com/0x1eef/nanoc-gunzip-rb)
+* [Source code (GitLab)](https://github.com/0x1eef/nanoc-gunzip.rb)
 
 ## Install
 
