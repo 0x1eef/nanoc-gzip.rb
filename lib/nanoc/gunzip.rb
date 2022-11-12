@@ -14,7 +14,7 @@ module Nanoc::Gunzip
   # @param [String] content
   #  The contents of a file.
   #
-  # @param [Integer]
+  # @param [Integer] level
   #  The compression level represented by an integer between 0, and 9. <br>
   #  The default is 9 (Zlib::BEST_COMPRESSION).
   #
