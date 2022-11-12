@@ -8,8 +8,6 @@ module Nanoc::Gunzip
   require_relative "gunzip/binary_filter"
   include Zlib
 
-  private
-
   ##
   # Compresses a string, and writes the string to "Nanoc::Filter#output_filename".
   #
