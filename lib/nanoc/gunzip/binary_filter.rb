@@ -2,7 +2,7 @@
 
 class Nanoc::Gunzip::BinaryFilter < Nanoc::Filter
   identifier :gzip_binary
-  type text: :binary
+  type binary: :binary
   include Nanoc::Gunzip
 
   ##
