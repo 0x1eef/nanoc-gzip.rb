@@ -65,7 +65,7 @@ demonstrates how the options can be used:
 require "nanoc-gunzip"
 compile "/images/*.png" do
   write(item.identifier.to_s)
-  filter :gzip_binary, level: X, strategy: Y
+  filter :gzip_binary, {level: X, strategy: Y}
   write("#{item.identifier}.gz")
 end
 ```
