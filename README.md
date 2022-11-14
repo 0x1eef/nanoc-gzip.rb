@@ -27,7 +27,7 @@ For textual items, the `gzip_text` filter is used:
 require "nanoc-gunzip"
 compile "/js/app.js" do
   write("/js/app.js")
-  filter :gzip_text
+  filter(:gzip_text)
   write("/js/app.js.gz")
 end
 ```
@@ -42,7 +42,7 @@ For binary items, the `gzip_binary` filter is used:
 require "nanoc-gunzip"
 compile "/images/*.png" do
   write(item.identifier.to_s)
-  filter :gzip_binary
+  filter(:gzip_binary)
   write("#{item.identifier}.gz")
 end
 ```
@@ -65,7 +65,7 @@ demonstrates how the options can be used:
 require "nanoc-gunzip"
 compile "/images/*.png" do
   write(item.identifier.to_s)
-  filter :gzip_binary, {level: X, strategy: Y}
+  filter(:gzip_binary, {level: X, strategy: Y})
   write("#{item.identifier}.gz")
 end
 ```
