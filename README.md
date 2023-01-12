@@ -7,20 +7,17 @@ particularly useful when paired with the
 feature of nginx, or its equivalent in other web servers.
 
 The advantage of performing compression at compile time is that compression does
-not have to happen at runtime when a web server serves a request - which can save
-time and CPU resources.
+not have to happen at runtime when a web server serves a request. That can save
+time and CPU resources. nanoc-gunzip.rb is distributed as a RubyGem through its
+git repositories. See [INSTALL](#install) for details.
+
 
 ## Examples
-
-### Introduction
-
-The README probably covers everything you will need to know to use nanoc-gunzip.rb. <br>
-There's also [API documentation](https://0x1eef.github.io/x/nanoc-gunzip.rb) available.
 
 ### Textual items
 
 The following example demonstrates the compression of a textual item - a JavaScript file.
-For textual items, the `gzip_text` filter is used:
+For textual items, the `gzip_text` filter is used.
 
 ```ruby
 # Rules
@@ -34,8 +31,8 @@ end
 
 ### Binary items
 
-The following example demonstrates the compression of a binary item - a PNG file.
-For binary items, the `gzip_binary` filter is used:
+The following example demonstratesthe compression of a binary item - a PNG file.
+For binary items, the `gzip_binary` filter is used.
 
 ``` ruby
 # Rules
@@ -54,11 +51,8 @@ Both the `gzip_text`, and `gzip_binary` filters accept `level`, and `strategy` o
 The `level` option represents the compression level, and it can be an integer between 0,
 and 9. The default is 9 (`Zlib::BEST_COMPRESSION`).  The `strategy` options represents
 the compression strategy, and it can be an interger between  0, and 4. The default is
-0 (`Zlib::DEFAULT_STRATEGY`).
-
-For an explanation of what these integers can mean, see
-[the zlib manual](https://www.zlib.net/manual.html#Constants). The following example
-demonstrates how the options can be used:
+0 (`Zlib::DEFAULT_STRATEGY`). For an explanation of what those integers represent, see
+[the zlib manual](https://www.zlib.net/manual.html#Constants).
 
 ``` ruby
 # Rules
@@ -75,11 +69,19 @@ end
 * [Source code (GitHub)](https://github.com/0x1eef/nanoc-gunzip.rb)
 * [Source code (GitLab)](https://gitlab.com/0x1eef/nanoc-gunzip.rb)
 
-## Install
+## <a id='install'>Install</a>
 
-nanoc-gunzip.rb is available as a RubyGem:
+nanoc-gunzip.rb is distributed as a RubyGem through its git repositories. <br>
+[GitHub](https://github.com/0x1eef/nanoc-gunzip.rb),
+and
+[GitLab](https://gitlab.com/0x1eef/nanoc-gunzip.rb)
+are available as sources.
 
-    gem install nanoc-gunzip.rb
+**Gemfile**
+
+```ruby
+gem "nanoc-gunzip.rb", github: "0x1eef/nanoc-gunzip.rb", tag: "v0.1.2"
+```
 
 ## License
 
