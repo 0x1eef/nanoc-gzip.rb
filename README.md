@@ -7,9 +7,9 @@ particularly useful when paired with the
 feature of nginx, or its equivalent in other web servers.
 
 The advantage of performing compression at compile time is that compression does
-not have to happen at runtime when a web server serves a request. That can save
-time and CPU resources. nanoc-gunzip.rb is distributed as a RubyGem through its
-git repositories. See [INSTALL](#install) for details.
+not have to happen at runtime when a web server is serving a request. nanoc-gunzip.rb
+is distributed as a RubyGem through its git repositories. See [INSTALL](#install)
+for details.
 
 
 ## Examples
