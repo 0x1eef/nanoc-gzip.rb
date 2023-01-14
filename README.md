@@ -17,7 +17,7 @@ for details.
 ### Textual items
 
 The following example demonstrates the compression of a textual item - a JavaScript file. <br>
-For textual items, the `gzip_text` filter is used.
+For textual items, the `gzip_text` filter can be used.
 
 ```ruby
 # Rules
@@ -32,7 +32,7 @@ end
 ### Binary items
 
 The following example demonstratesthe compression of a binary item - a PNG file. <br>
-For binary items, the `gzip_binary` filter is used.
+For binary items, the `gzip_binary` filter can be used.
 
 ``` ruby
 # Rules
