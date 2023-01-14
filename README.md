@@ -31,7 +31,7 @@ end
 
 ### Binary items
 
-The following example demonstratesthe compression of a binary item - a PNG file. <br>
+The following example demonstrates the compression of a binary item - a PNG file. <br>
 For binary items, the `gzip_binary` filter can be used.
 
 ``` ruby
