@@ -80,7 +80,7 @@ are available as sources.
 **Gemfile**
 
 ```ruby
-gem "nanoc-gunzip.rb", github: "0x1eef/nanoc-gunzip.rb", tag: "v0.1.2"
+gem "nanoc-gunzip.rb", github: "0x1eef/nanoc-gunzip.rb", tag: "v0.1.3"
 ```
 
 ## License
