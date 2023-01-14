@@ -4,12 +4,12 @@ nanoc-gunzip.rb is a [nanoc](https://github.com/nanoc/nanoc) filter that can
 compress textual, and binary items in a nanoc-powered website. The filter is
 particularly useful when paired with the
 [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
-feature of nginx, or its equivalent in other web servers.
+feature of nginx, or its equivalent in other web servers. The advantage of
+performing compression ahead of time is that it won't have to be performed
+when a web server is serving a request.
 
-The advantage of performing compression ahead of time is that it won't
-have to be performed when a web server is serving a request. nanoc-gunzip.rb
-is distributed as a RubyGem through its git repositories. See [INSTALL](#install)
-for details.
+nanoc-gunzip.rb is distributed as a RubyGem through its git repositories. See
+[INSTALL](#install) for details.
 
 
 ## Examples
