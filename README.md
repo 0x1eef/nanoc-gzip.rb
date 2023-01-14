@@ -6,8 +6,8 @@ particularly useful when paired with the
 [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
 feature of nginx, or its equivalent in other web servers.
 
-The advantage of performing compression at compile time is that compression does
-not have to happen at runtime when a web server is serving a request. nanoc-gunzip.rb
+The advantage of performing compression ahead of time is that compression won't
+have to be performed when a web server is serving a request. nanoc-gunzip.rb
 is distributed as a RubyGem through its git repositories. See [INSTALL](#install)
 for details.
 
