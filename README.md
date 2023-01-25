@@ -13,7 +13,7 @@ when a web server is serving a request.
 ### Textual items
 
 The following example demonstrates the compression of a textual item - a JavaScript file. <br>
-For textual items, the `gzip_text` filter can be used.
+For textual items, the `gzip_text` filter is used.
 
 ```ruby
 # Rules
@@ -28,7 +28,7 @@ end
 ### Binary items
 
 The following example demonstrates the compression of a binary item - a PNG file. <br>
-For binary items, the `gzip_binary` filter can be used.
+For binary items, the `gzip_binary` filter is used.
 
 ``` ruby
 # Rules
@@ -46,7 +46,7 @@ Both the `gzip_text`, and `gzip_binary` filters accept `level`, and `strategy` o
 
 The `level` option represents the compression level, and it can be an integer between 0,
 and 9. The default is 9 (`Zlib::BEST_COMPRESSION`).  The `strategy` options represents
-the compression strategy, and it can be an interger between  0, and 4. The default is
+the compression strategy, and it can be an integer between  0, and 4. The default is
 0 (`Zlib::DEFAULT_STRATEGY`). For a complete explanation of what each integer represents,
 see [the zlib manual](https://www.zlib.net/manual.html#Constants).
 
