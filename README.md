@@ -8,10 +8,6 @@ feature of nginx, or its equivalent in other web servers. The advantage of
 performing compression ahead of time is that it won't have to be performed
 when a web server is serving a request.
 
-nanoc-gunzip.rb is distributed as a RubyGem through its git repositories. See
-[INSTALL](#install) for details.
-
-
 ## Examples
 
 ### Textual items
