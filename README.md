@@ -45,7 +45,7 @@ end
 Both the `gzip_text`, and `gzip_binary` filters accept `level`, and `strategy` options.
 
 The `level` option represents the compression level, and it can be an integer between 0,
-and 9. The default is 9 (`Zlib::BEST_COMPRESSION`).  The `strategy` options represents
+and 9. The default is 9 (`Zlib::BEST_COMPRESSION`).  The `strategy` option represents
 the compression strategy, and it can be an integer between  0, and 4. The default is
 0 (`Zlib::DEFAULT_STRATEGY`). For a complete explanation of what each integer represents,
 see [the zlib manual](https://www.zlib.net/manual.html#Constants).
