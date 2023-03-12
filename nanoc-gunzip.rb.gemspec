@@ -7,10 +7,10 @@ Gem::Specification.new do |gem|
   gem.email = ["0x1eef@protonmail.com"]
   gem.homepage = "https://github.com/0x1eef/nanoc-gunzip.rb#readme"
   gem.version = Nanoc::Gunzip::VERSION
-  gem.licenses = ["MIT"]
+  gem.licenses = ["0BSD"]
   gem.files = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
-  gem.summary = "A nanoc filter that can compress textual and binary items"
+  gem.summary = "A nanoc filter that can compress content with gunzip / gzip"
   gem.description = gem.summary
   gem.add_development_dependency "yard", "~> 0.9"
   gem.add_development_dependency "redcarpet", "~> 3.5"
