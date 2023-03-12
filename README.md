@@ -12,8 +12,8 @@ when a web server is serving a request.
 
 ### Textual items
 
-The following example demonstrates the compression of a textual item - a JavaScript file. <br>
-For textual items, the `gzip_text` filter is used.
+The following example demonstrates the compression of a textual item. <br>
+For textual items, the `gzip_text` filter is used:
 
 ```ruby
 # Rules
@@ -27,8 +27,8 @@ end
 
 ### Binary items
 
-The following example demonstrates the compression of a binary item - a PNG file. <br>
-For binary items, the `gzip_binary` filter is used.
+The following example demonstrates the compression of a binary item. <br>
+For binary items, the `gzip_binary` filter is used:
 
 ``` ruby
 # Rules
@@ -81,5 +81,6 @@ gem "nanoc-gunzip.rb", github: "0x1eef/nanoc-gunzip.rb", tag: "v0.1.5"
 
 ## License
 
-This project is released under the terms of the MIT license. <br>
-See [./LICENSE.txt](./LICENSE.txt) for details.
+[BSD Zero Clause](https://choosealicense.com/licenses/0bsd/).
+<br>
+See [LICENSE](./LICENSE).
