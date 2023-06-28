@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require "./lib/nanoc/gunzip/version"
+require "./lib/nanoc-gzip/version"
 Gem::Specification.new do |gem|
-  gem.name = "nanoc-gunzip.rb"
+  gem.name = "nanoc-gzip.rb"
   gem.authors = ["0x1eef"]
   gem.email = ["0x1eef@protonmail.com"]
-  gem.homepage = "https://github.com/0x1eef/nanoc-gunzip.rb#readme"
-  gem.version = Nanoc::Gunzip::VERSION
+  gem.homepage = "https://github.com/0x1eef/nanoc-gzip.rb#readme"
+  gem.version = Nanoc::Gzip::VERSION
   gem.licenses = ["0BSD"]
   gem.files = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
-  gem.summary = "A nanoc filter that can compress content with gzip"
+  gem.summary = "A nanoc filter that compresses content in the gzip format"
   gem.description = gem.summary
 
   ##

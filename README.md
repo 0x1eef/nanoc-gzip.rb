@@ -1,82 +1,68 @@
 ## About
 
-nanoc-gunzip.rb is a [nanoc](https://github.com/nanoc/nanoc) filter that can
-compress textual, and binary items in a nanoc-powered website. The filter is
-particularly useful when paired with the
+nanoc-gzip.rb is a
+[nanoc](https://github.com/nanoc/nanoc)
+filter that utilizes gzip to create a compressed copy
+of the input it is given, and then writes the result
+to disk. The filter can be combined with the nginx module
 [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
-feature of nginx, or its equivalent in other web servers. The advantage of
-performing compression ahead of time is that it won't have to be performed
-when a web server is serving a request.
+or its equivalent in other web servers.
 
 ## Examples
 
-### Textual items
+**Default options**
 
-The following example demonstrates the compression of a textual item. <br>
-For textual items, the `gzip_text` filter is used:
+The following example demonstrates the compression of "app.js".
+The uncompressed version (app.js) and the compressed version
+(app.js.gz) are both written to disk:
 
 ```ruby
 # Rules
-require "nanoc-gunzip"
+require "nanoc-gzip"
 compile "/js/app.js" do
   write("/js/app.js")
-  filter(:gzip_text)
+  filter(:gzip)
   write("/js/app.js.gz")
 end
 ```
 
-### Binary items
+**Custom options**
 
-The following example demonstrates the compression of a binary item. <br>
-For binary items, the `gzip_binary` filter is used:
-
-``` ruby
-# Rules
-require "nanoc-gunzip"
-compile "/images/*.png" do
-  write(item.identifier.to_s)
-  filter(:gzip_binary)
-  write("#{item.identifier}.gz")
-end
-```
-
-### Options
-
-Both the `gzip_text`, and `gzip_binary` filters accept `level`, and `strategy` options.
-
-The `level` option represents the compression level, and it can be an integer between 0,
-and 9. The default is 9 (`Zlib::BEST_COMPRESSION`).  The `strategy` option represents
-the compression strategy, and it can be an integer between  0, and 4. The default is
-0 (`Zlib::DEFAULT_STRATEGY`). For a complete explanation of what each integer represents,
-see [the zlib manual](https://www.zlib.net/manual.html#Constants).
+The filter can be configured with "level", and
+"strategy" options. Both are integer values. The
+default level is 9. and the default strategy
+is 0. The
+[the zlib manual](https://www.zlib.net/manual.html#Constants)
+documents what integers are accepted and what
+they represent.
 
 ``` ruby
 # Rules
 require "nanoc-gunzip"
-compile "/images/*.png" do
-  write(item.identifier.to_s)
-  filter(:gzip_binary, {level: X, strategy: Y})
-  write("#{item.identifier}.gz")
+compile "/js/app.js" do
+  write("/js/app.js")
+  filter(:gzip, {level: 2, strategy: 3})
+  write("/js/app.js.gz")
 end
 ```
 
 ## Sources
 
-* [Source code (GitHub)](https://github.com/0x1eef/nanoc-gunzip.rb)
-* [Source code (GitLab)](https://gitlab.com/0x1eef/nanoc-gunzip.rb)
+* [Source code (GitHub)](https://github.com/0x1eef/nanoc-gzip.rb)
+* [Source code (GitLab)](https://gitlab.com/0x1eef/nanoc-gzip.rb)
 
 ## <a id='install'>Install</a>
 
-nanoc-gunzip.rb is distributed as a RubyGem through its git repositories. <br>
-[GitHub](https://github.com/0x1eef/nanoc-gunzip.rb),
+nanoc-gzip.rb is distributed as a RubyGem through its git repositories. <br>
+[GitHub](https://github.com/0x1eef/nanoc-gzip.rb),
 and
-[GitLab](https://gitlab.com/0x1eef/nanoc-gunzip.rb)
+[GitLab](https://gitlab.com/0x1eef/nanoc-gzip.rb)
 are available as sources.
 
 **Gemfile**
 
 ```ruby
-gem "nanoc-gunzip.rb", github: "0x1eef/nanoc-gunzip.rb", tag: "v0.1.5"
+gem "nanoc-gzip.rb", github: "0x1eef/nanoc-gzip.rb", tag: "v0.1.5"
 ```
 
 ## License
