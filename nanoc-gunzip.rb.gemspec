@@ -12,6 +12,15 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.summary = "A nanoc filter that can compress content with gzip"
   gem.description = gem.summary
+
+  ##
+  # Default gems
+  # Pinned to specific versions for OpenBSD support
+  gem.add_runtime_dependency "json", "= 2.6.1"
+  gem.add_runtime_dependency "racc", "= 1.6.0"
+  gem.add_runtime_dependency "stringio", "= 3.0.1"
+  gem.add_runtime_dependency "set", "= 1.0.2"
+
   gem.add_runtime_dependency "nanoc", "~> 4.12"
   gem.add_development_dependency "yard", "~> 0.9"
   gem.add_development_dependency "redcarpet", "~> 3.5"
