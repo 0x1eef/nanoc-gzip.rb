@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "nanoc/core/executor"
 module Nanoc::Core::Executor
   module Patch

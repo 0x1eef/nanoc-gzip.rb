@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "nanoc/core/filter"
 class Nanoc::Core::Filter
   def self.from_binary_or_text?
