@@ -4,8 +4,7 @@ require "nanoc"
 
 module Nanoc::Gunzip
   require "zlib"
-  require_relative "gunzip/text_filter"
-  require_relative "gunzip/binary_filter"
+  require_relative "gunzip/filter"
   include Zlib
 
   ##

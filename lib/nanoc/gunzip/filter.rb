@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class Nanoc::Gunzip::TextFilter < Nanoc::Filter
-  identifier :gzip_text
-  type text: :binary
+class Nanoc::Gunzip::Filter < Nanoc::Filter
+  identifier :gzip
+  type [:binary, :text] => :binary
   include Nanoc::Gunzip
 
   ##
@@ -14,9 +14,9 @@ class Nanoc::Gunzip::TextFilter < Nanoc::Filter
   #
   # @return [String]
   #  Returns the contents of a file as a compressed string.
-  def run(content, options = {})
+  def run(str, options = {})
     gunzip(
-      content,
+      item.binary? ? File.binread(str) : str,
       options[:level],
       options[:strategy]
     )
