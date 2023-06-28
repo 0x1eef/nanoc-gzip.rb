@@ -38,7 +38,7 @@ they represent:
 
 ``` ruby
 # Rules
-require "nanoc-gunzip"
+require "nanoc-gzip"
 compile "/js/app.js" do
   write("/js/app.js")
   filter(:gzip, {level: 2, strategy: 3})
