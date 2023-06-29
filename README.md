@@ -62,7 +62,7 @@ are available as sources.
 **Gemfile**
 
 ```ruby
-gem "nanoc-gzip.rb", github: "0x1eef/nanoc-gzip.rb", tag: "v0.1.5"
+gem "nanoc-gzip.rb", github: "0x1eef/nanoc-gzip.rb", tag: "v0.2.0"
 ```
 
 ## License
