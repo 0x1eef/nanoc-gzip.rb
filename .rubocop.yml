@@ -10,26 +10,15 @@ inherit_gem:
   standard: config/base.yml
 
 ##
-# Extra cops
+# Enabled
 Style/FrozenStringLiteralComment:
   Enabled: true
 
 ##
-# Disabled cops (rspec-specific)
-RSpec/FilePath:
-  Enabled: false
-RSpec/NestedGroups:
-  Enabled: false
-RSpec/NotToNot:
-  Enabled: false
-RSpec/EmptyLineAfterHook:
-  Enabled: false
-RSpec/EmptyLineAfterSubject:
-  Enabled: false
-
-##
-# Disabled cops (lib-specific)
+# Disabled
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 Style/TrivialAccessors:
+  Enabled: false
+Style/CommandLiteral:
   Enabled: false
