@@ -9,7 +9,7 @@ class Nanoc::Gzip::Filter < Nanoc::Filter
   # @param [String] str
   # @return [String]
   def run(str, options = {})
-    gunzip(
+    gzip(
       item.binary? ? File.binread(str) : str,
       options[:level],
       options[:strategy]
