@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "nanoc/core/executor"
-module Nanoc::Core::Executor
+class Nanoc::Core::Executor
   module Patch
     def filter_for_filtering(filter_name)
       klass = Nanoc::Core::Filter.named!(filter_name)
