@@ -21,14 +21,14 @@ class FilterTest < Test::Unit::TestCase
 
   def test_text_item
     filter.extend(TextItem).run("hello world")
-    assert_match %r{^application/x-gzip}, file(filter.output_filename)
+    assert_match %r{^application/(x-)gzip}, file(filter.output_filename)
   end
 
   def test_binary_item
     bin_file = File.join(__dir__, "bin_test_file")
     File.binwrite(bin_file, "hello world")
     filter.extend(BinaryItem).run(bin_file)
-    assert_match %r{^application/x-gzip}, file(filter.output_filename)
+    assert_match %r{^application/(x-)gzip}, file(filter.output_filename)
   ensure
     FileUtils.rm(bin_file)
   end
