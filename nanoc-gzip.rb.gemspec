@@ -22,6 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "set", "= 1.0.2"
 
   gem.add_runtime_dependency "nanoc", "~> 4.12"
+  gem.add_development_dependency "test-unit", "~> 3.5"
   gem.add_development_dependency "yard", "~> 0.9"
   gem.add_development_dependency "redcarpet", "~> 3.5"
   gem.add_development_dependency "rspec", "~> 3.10"
