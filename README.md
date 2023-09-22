@@ -34,7 +34,7 @@ default level is 9. And the default strategy
 is 0. The
 [zlib manual](https://www.zlib.net/manual.html#Constants)
 documents what integers are accepted and what
-they represent:
+they represent. Example:
 
 ``` ruby
 # Rules
