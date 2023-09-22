@@ -41,7 +41,7 @@ they represent. Example:
 require "nanoc-gzip"
 compile "/js/app.js" do
   write("/js/app.js")
-  filter(:gzip, {level: 2, strategy: 3})
+  filter(:gzip, {level: 1, strategy: 2})
   write("/js/app.js.gz")
 end
 ```
