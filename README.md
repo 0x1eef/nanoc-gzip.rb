@@ -10,7 +10,7 @@ or its equivalent in other web servers.
 
 ## Examples
 
-**Default options**
+**Defaults**
 
 The following example demonstrates the compression of "app.js".
 The uncompressed version (app.js) and the compressed version
@@ -26,7 +26,7 @@ compile "/js/app.js" do
 end
 ```
 
-**Custom options**
+**Options**
 
 The filter can be configured with "level", and
 "strategy" options. Both are integer values. The
