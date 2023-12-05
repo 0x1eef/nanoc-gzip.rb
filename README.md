@@ -1,10 +1,9 @@
 ## About
 
 nanoc-gzip.rb is a
-[nanoc](https://github.com/nanoc/nanoc)
-filter that utilizes gzip to create a compressed copy
-of the input it is given, and then writes the result
-to disk. The filter can be combined with the nginx module
+[nanoc](https://nanoc.app)
+filter that integrates gzip compression into nanoc-powered
+websites. The filter can be combined with the nginx module
 [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
 or its equivalent in other web servers.
 
