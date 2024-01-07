@@ -52,17 +52,24 @@ end
 
 ## <a id='install'>Install</a>
 
+**Git**
+
 nanoc-gzip.rb is distributed as a RubyGem through its git repositories. <br>
 [GitHub](https://github.com/0x1eef/nanoc-gzip.rb),
 and
 [GitLab](https://gitlab.com/0x1eef/nanoc-gzip.rb)
 are available as sources.
 
-**Gemfile**
-
 ```ruby
-gem "nanoc-gzip.rb", github: "0x1eef/nanoc-gzip.rb"
+# Gemfile
+gem "nanoc-gzip.rb", github: "0x1eef/nanoc-gzip.rb", tag: "v0.2.2"
 ```
+
+**Rubygems.org**
+
+nanoc-gzip.rb can also be installed via rubygems.org.
+
+    gem install nanoc-gzip.rb
 
 ## License
 
