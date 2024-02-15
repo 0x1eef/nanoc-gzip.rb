@@ -14,14 +14,6 @@ Gem::Specification.new do |gem|
   gem.description = gem.summary
   gem.metadata = { "documentation_uri" => "https://0x1eef.github.io/x/nanoc-gzip.rb" }
 
-  ##
-  # Default gems
-  # Pinned to specific versions for OpenBSD support
-  gem.add_runtime_dependency "json", "= 2.6.1"
-  gem.add_runtime_dependency "racc", "= 1.6.0"
-  gem.add_runtime_dependency "stringio", "= 3.0.1"
-  gem.add_runtime_dependency "set", "= 1.0.2"
-
   gem.add_runtime_dependency "nanoc", "~> 4.12"
   gem.add_development_dependency "test-unit", "~> 3.5"
   gem.add_development_dependency "yard", "~> 0.9"
