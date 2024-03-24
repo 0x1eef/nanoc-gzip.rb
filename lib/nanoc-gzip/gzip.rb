@@ -7,17 +7,15 @@ module Nanoc::Gzip
   include Zlib
 
   ##
-  # Compresses a string, and writes the string to "Nanoc::Filter#output_filename".
-  #
   # @param [String] content
   #  The contents of a file.
   #
   # @param [Integer] level
-  #  The compression level represented by an integer between 0, and 9. <br>
+  #  The compression level.
   #  The default is 9 (Zlib::BEST_COMPRESSION).
   #
   # @param [Integer] strategy
-  #  The compression strategy represented by an integer between 0, and 4. <br>
+  #  The compression strategy.
   #  The default is 0 (Zlib::DEFAULT_STRATEGY).
   #
   # @return [void]
