@@ -50,7 +50,7 @@ end
 
 **Rubygems.org**
 
-nanoc-gzip.rb can also be installed via rubygems.org.
+nanoc-gzip.rb can be installed via rubygems.org.
 
     gem install nanoc-gzip.rb
 
