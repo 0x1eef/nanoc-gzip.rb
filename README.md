@@ -3,7 +3,6 @@
 nanoc-gzip.rb is a
 [nanoc](https://nanoc.app)
 filter that integrates gzip into nanoc.
-<br>
 The filter can be combined with the nginx module
 [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
 or its equivalent in other web servers.
@@ -61,6 +60,6 @@ nanoc-gzip.rb can be installed via rubygems.org.
 
 ## License
 
-[BSD Zero Clause](https://choosealicense.com/licenses/0bsd/).
+[BSD Zero Clause](https://choosealicense.com/licenses/0bsd/)
 <br>
-See [LICENSE](./LICENSE).
+See [LICENSE](./LICENSE)
