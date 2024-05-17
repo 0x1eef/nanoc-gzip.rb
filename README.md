@@ -45,11 +45,11 @@ compile "/js/app.js" do
 end
 ```
 
-## <a id='install'>Install</a>
+## Install
 
 **Rubygems.org**
 
-nanoc-gzip.rb can be installed via rubygems.org.
+nanoc-gzip.rb can be installed via rubygems.org:
 
     gem install nanoc-gzip.rb
 

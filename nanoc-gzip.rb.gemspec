@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.licenses = ["0BSD"]
   gem.files = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
-  gem.summary = "A nanoc filter that compresses content in the gzip format"
+  gem.summary = "nanoc-gzip.rb integrates gzip into nanoc"
   gem.description = gem.summary
   gem.metadata = { "documentation_uri" => "https://0x1eef.github.io/x/nanoc-gzip.rb" }
 
