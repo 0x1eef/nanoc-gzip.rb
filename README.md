@@ -33,7 +33,7 @@ default compression level is `Zlib::BEST_COMPRESSION`.
 And the default strategy is `Zlib::DEFAULT_STRATEGY`. The
 [zlib manual](https://www.zlib.net/manual.html#Constants)
 documents what integers are accepted and what
-they represent. Example:
+they represent. For example:
 
 ``` ruby
 # Rules
